@@ -2,4 +2,10 @@
 
 lunes 16 marzo 2026
 
-cristobal vergara
+> grupo solemne 1: josefa, debora, cristobal
+>
+> lenguaje arduino c++
+
+void setup() {
+
+void loop() {
