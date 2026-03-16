@@ -2,4 +2,17 @@
 
 lunes 16 marzo 2026
 
-Hola, soy Martina y soy grupo con Catalina Salinas y Antonella Lavalle
+Grupo S1: Martina Alegría, Catalina Salinas y Antonella Lavalle.
+
+## Instalación de Software
+
+-Arduino IDE 2.3.8 
+
+## Instalacion de Bibliotecas adicionales
+
+Boards Manager -> Arduino Uno R4 Boards (v1.5.3 o más reciente)
+
+Library Manager -> ArduinoMQTTClient (v0.1.8 o más reciente)
+
+Library Manager -> ArduinoGraphics (v1.1.4 o más reciente)
+
