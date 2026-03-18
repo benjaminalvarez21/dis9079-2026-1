@@ -2,7 +2,7 @@
 
 lunes 16 marzo 2026
 
-## Apuntrtes clase 
+## Apuntes clase 
 
 - Formamos grupos de trabajos para la entrega n°1, el cual es: Monserrat Paredes[Monserrat-Paredes](https://github.com/Monserrat-Paredes) y Valentina Ruz [vxlentiinaa](https://github.com/vxlentiinaa)
 - Después se enseñó cómo utilizar github con Markdown para la documentación de los proyectos y los apuntes del curso. Ya que, es un lemguaje diseñado para escribir, formatear y jerarquizar.
