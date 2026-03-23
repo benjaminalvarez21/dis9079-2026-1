@@ -28,16 +28,24 @@ los 3 siguientes puntos son criterios grupales
 individual:
 
 - 1 punto por calidad de la presentación oral
-- 1 punto por bitácora previa a la presentación
-- 1 punto por aporte detallado individual de cada persona al proyecto
+- 1 punto por bitácora personal textual y visual del trabajo en clases e investigación personal
+- 1 punto por aportes al README.md grupal de texto y visuales explicativas, por las referencias
 
 grupal:
 
-- 1 punto por documentación textual (README.md explicativo del proyecto)
-- 1 punto por diagrama de flujo
-- 1 punto por código fuente
+- 1 punto por diagrama de flujo del proyecto
+- 1 punto por calidad del código fuente para enviar y para recibir
+- 1 punto por funcionamiento del sistema
+  - 1 punto: el sistema puede enviar y recibir mensajes
+  - 0.5 puntos: el sistema solamente envía o recibe mensajes
+  - 0.3 puntos: intentos de enviar o recibir mensajes, aunque no funcionen
+  - 0.0 puntos: los intentos no se entienden, no tienen comentarios, están desordenados
 
 ## descuentos
+
+- 4 puntos menos por no presentar
+- 2 puntos menos por presentar sin explicación
+- 3 puntos menos por no usar referencias a tutoriales
 
 ## horarios
 

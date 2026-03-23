@@ -4,6 +4,9 @@
 # Arduino
 */arduino_secrets.h
 
+# Claude
+./claude
+
 # Node
 node_modules/
 npm-debug.log

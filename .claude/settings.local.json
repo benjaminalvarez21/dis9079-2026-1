@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mosquitto:*)",
+      "Bash(brew install:*)",
+      "Bash(npm install:*)",
+      "Bash(gtimeout:*)",
+      "Bash(echo:*)",
+      "Bash(mosquitto_passwd:*)",
+      "Bash(node -e:*)",
+      "Bash(pgrep:*)",
+      "Bash(code:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
