@@ -50,6 +50,14 @@ CÓDIGO EN ARDUINO
 
 - humillada en vivo, el arte de fallar espectacularmente en vivo, es la única clase en las que he estado en las que nos enfrentamos a esto, me gusta esta clase
 
+- hay una cosa que es el ID y otra cosa es el Username, son DISTINTOS
+
+- en el código que estaba utilizando aarón, estaba utilizando estos 2 elementos como si fueran lo mismo y no lo son
+
+- no se pudo arreglar el código de momento, a las 15:38, ampliaremos.
+
+- 
+
 - 
 
 - 
