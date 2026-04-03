@@ -103,3 +103,15 @@ para instalarla en nuestro software `Arduino IDE`, debemos seguir los siguientes
 - al momento de instalar, el software te preguntará si quieres instalar las otras bibliotecas que necesita `Adafruit IO Arduino` para funcionar correctamente. es muy importante que ACEPTES y SÍ las instales. es tan importante que lo escribí en mayúsculas.
 
 ## sobre la cuenta de Adafruit IO
+
+- ingresar a <https://io.adafruit.com/> y crear una cuenta gratuita.
+- te pido por favor usar tu correo udp, para poder identificarte fácilmente en el curso.
+- usen una cuenta gratuita,no es necesario pagar por esta plataforma para el curso.
+- al hacer inicio de sesión, en la esquina superior derecha hay un ícono de una llave con fondo amarillo, si haces click en ella podrás ver tus credencias.
+- es muy importante que NO compartas tus credenciales, que NO las subas a github. si quieres compartirlas con tu grupo, hazlo por privado, por ejemplo a través de un mensaje por correo electrónico. si las subes a github, cualquiera podría usarlas y eso podría generar problemas de seguridad para tu cuenta.
+
+## sobre la cuenta que usaremos
+
+yo pagué por el plan anual como parte de mi labor de enseñanza del curso, y les compartiré mis claves para que puedan usar mi cuenta durante el semestre.
+
+las publicaré en discord, en el canal de `#solemne-01`, para que puedan acceder a ellas y usarlas durante el semestre. por favor, usen estas claves con responsabilidad y no las compartan con nadie fuera del curso, ni tampoco las suban a github.
