@@ -72,7 +72,7 @@ También me parece interesante que, a pesar de ser una placa pequeña, tiene muc
 
 <img width="1620" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d808ed7-975e-4f84-914b-6d753789ed4d" />
 
-*Créditos Imagen: https://raspberrypi.cl/products/raspberry-pi-pico-2-w-con-headers?variant=47160238244018
+*Créditos Imagen: https://raspberrypi.cl/products/raspberry-pi-pico-2-w-con-headers?variant=47160238244018*
 
 Me gusta el logo de frambuesa, es muy cute <3
 
