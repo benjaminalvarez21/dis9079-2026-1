@@ -74,7 +74,7 @@ logramos hacer que el potenciómetro funcionara!
 
 ![pot](./imagenes/pot.png)
 ![pot](./imagenes/potfeed.png)
-![pot](./imagenes/potconexión.heic)
+![pot](./imagenes/potconexión.HEIC)
 
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
 
