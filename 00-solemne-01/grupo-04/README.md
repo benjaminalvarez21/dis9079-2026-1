@@ -2,9 +2,9 @@
 
 ## integrantes
 
-* nombre completo
-* nombre completo
-* nombre completo
+* martina alegria
+* antonella lavalle
+* catalina salinas
 
 ## descripción del proyecto
 
