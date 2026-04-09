@@ -10,18 +10,18 @@
 
 ## Sistema Enviar
 
-![titulo](./imagenes/armadosistemaenviar.jpeg)
+![Arduino con potenciómetro](./imagenes/armadosistemaenviar.jpeg)
 
-![titulo](./imagenes/primerapruebapotenciometro.gif)
+![Adafruit respondiendo a potenciómetro](./imagenes/primerapruebapotenciometro.gif)
 
-![titulo](./imagenes/pruebabrilloledadafruitio.png)
+![Gráfico de información que recibió Adafruit](./imagenes/pruebabrilloledadafruitio.png)
 
 
 ## Sistema Recibir
 
-![titulo](./imagenes/armadosistemarecibir.jpeg)
+![Raspberry con LED](./imagenes/armadosistemarecibir.jpeg)
 
-![titulo](./imagenes/Raspberry-Pi-Pico-2-W-Pinout.webp)
+![Pins Raspberry Pi Pico 2 W](./imagenes/Raspberry-Pi-Pico-2-W-Pinout.webp)
 
 ![titulo](./imagenes/instalación-raspberrypiboards.jpeg)
 
