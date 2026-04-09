@@ -24,8 +24,9 @@ Como ya teníamos la placa y el potenciómetro listos, solo nos faltaba lograr e
 
 ![Adafruit respondiendo a potenciómetro](./imagenes/primerapruebapotenciometro.gif)
 
-![Gráfico de información que recibió Adafruit](./imagenes/pruebabrilloledadafruitio.png)
+Luego, si presionábamos en el feed de ``brillo-led``, nos permitía ver un gráfico que representaba toda la información que le enviábamos desde el potenciómetro, lo cual se veía así:
 
+![Gráfico de información que recibió Adafruit](./imagenes/pruebabrilloledadafruitio.png)
 
 ## Sistema Recibir
 
