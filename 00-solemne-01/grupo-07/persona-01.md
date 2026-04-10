@@ -44,19 +44,57 @@ El trabajo creativo de Ying Gao se ha podido ver en medios internacionales como 
 
 >"Su obra da testimonio de la profunda mutación del mundo en que vivimos y conlleva una dimensión crítica radical que trasciende la experimentación tecnológica."
 
+![Living pod, 2007](./imagenes/ying-gao-light-activated-organza.gif)
+
 Ying Gao ve el diseño como un medio y cuestiona las fronteras del vestuario y la moda, combinandola con el diseño de productos, media, tecnología, robotica y sociología. 
 Sus inspiraciones al construir sus prendas están en la transformación social, el ambiente urbano y también la literatura.
 
->“When it’s too conceptual I lose interest. I’m attracted to the object, the material used, and how I can use it.” - Ying Gao
+>“Cuando es muy conceptual, pierdo el interes. Estoy atraida al objeto, el material usado, y como puedo usarlo.” - Ying Gao
 
+Seleccioné los tres trabajos que más me llamaron la atención:
 
-
-![Living pod, 2007](./imagenes/ying-gao-light-activated-organza.gif)
-
+1.
 ![Incertitudes, 2013](./imagenes/ying-gao-soundactivated.gif)
 
-![Standing time, 2019](./imagenes/ying-gao-robotic-clothing-reacting.gif)
+2. Possible tomorrows
+   
 
+![Possible tomorrows](./imagenes/possible-tomorrows.gif)
+
+
+
+3. Flowing water, Standing time
+
+
+Ropa robótica que reacciona al espectro cromático
+
+Materiales: silicona, vidrio, PVDF, dispositivos electrónicos
+
+2019
+
+Las prendas reaccionan al contexto, utilizan sensores de color y luz, también pequeñas cámaras conectadas a un computador Raspberry Pi, para recopilar información 
+sobre su entorno.
+
+Los datos recopilados activan una serie de transmisores e imanes entrelazados con silicona para provocar que los tejidos se ondulen y se muevan.
+
+Ying Gao sobre este proyecto:
+
+>"Desde el punto de vista técnico y tecnológico, este proyecto se diferencia de los anteriores porque las prendas tienen mucha más autonomía."
+
+>"No solo interactúan con las personas que les rodean, sino también, y especialmente, con su entorno, por lo que el cuerpo humano ya no es el centro del proyecto."
+
+
+Se inspiró en la novela del neurólogo Oliver Sacks, "The Man who Mistook his Wife for a Hat". En la historia el protagonista, un antiguo marinero, se convence de
+que no envejece. Impactado por su propio reflejo cuando Sacks le entrega un espejo, el marinero pierde toda noción de continuidad temporal y vive prisionero de
+este momento perpetuo, oscilando entre una presencia en el mundo y una presencia en sí mismo.
+Al igual que el personaje, las prendas evolucionan entre dos estados y muestran un cambio perpetuo al reaccionar al espectro cromático. El tránsito entre estados
+opuestos, de la inmovilidad al movimiento, no funciona como una dicotomía. Sin embargo, el paso del tiempo añade dinamismo a cada prenda de una manera diferente.
+De alguna manera los vestuarios reaccionan a lo que ven.
+
+
+![Flowing water Standing time, 2019](./imagenes/Flowing-water-Standing-time.gif)
+
+![Flowing water Standing Time, 2019](./imagenes/ying-gao-robotic-clothing-reacting.gif)
 
 
 
@@ -69,4 +107,6 @@ Sus inspiraciones al construir sus prendas están en la transformación social, 
 >Drimonis, T. (2024, 25 enero). A Montreal-Based Designer Makes Fashion Move with Dynamic Garments. Sixtysix. https://sixtysixmag.com/ying-gao-studio-tour/
 
 >Exhibition Catalog. (2016). [Documents]. In Coded_Couture. Pratt Institute Archives Department of Exhibitions Collection. Pratt Institute Libraries Digital Collections. https://jstor.org/stable/community.40382752
+
+>Gao, Y. (s. f.). ying gao - designer. Ying Gao © 2010. https://yinggao.ca/interactifs/flowing-water-standing-time/
 
