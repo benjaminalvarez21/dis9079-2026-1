@@ -114,47 +114,99 @@ Al correr nuevamente el código no salió ningún error pero solo salía que est
 #include <WiFiS3.h>
 #include "AdafruitIO_WiFi.h"
 
-// nombre wifi y contraseña
-#define WIFI_SSID "si"
-#define WIFI_PASS "mailo6192"
+// datos del wifi y Adafruit
+#define WIFI_SSID       "si"
+#define WIFI_PASS       "mailo6192"
 
-//credenciales Adafruit IO
-#define IO_USERNAME  "UserDeAdafruit"
-#define IO_KEY       "KeyDeAdafruit"
+#define AIO_USERNAME    "nicolasvgreve"
+#define AIO_KEY         "keydemicuenta"
 
-//aquí va la variable con el nombre del feed
-AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
-AdafruitIO_Feed *potenciometro = io.feed("nicolasvaldesgreve-potenciometro");
+AdafruitIO_WiFi io(AIO_USERNAME, AIO_KEY, WIFI_SSID, WIFI_PASS);
 
-int potPin = A0;
+// mencionamos el feed con el key de éste
+AdafruitIO_Feed *ledFeed = io.feed("led-control");
 
+// aquí dejamos el baud en 115200 asi que hay que cambiarlo cuando prendamos el monitor serial jiji
 void setup() {
+  Serial.begin(115200);
 
-  //la velocidad la dejamos de 9600 baud como el standard, prender monitor serial
-  Serial.begin(9600);
   io.connect();
 
   while(io.status() < AIO_CONNECTED) {
+    Serial.print(".");
     delay(500);
   }
+
+  Serial.println("Conectado a Adafruit IO");
 }
 
 void loop() {
   io.run();
 
-  int valor = analogRead(potPin);
-  int valorMap = map(valor, 0, 1023, 0, 100);
-
-  potenciometro->save(valorMap);
-
-  delay(1000);
 }
+
 ```
 
 ### Código para recibir
 
 ```cpp
-// rellenar
+#include <WiFiS3.h>
+#include "AdafruitIO_WiFi.h"
+
+// datos de wifi y adafruit 
+#define WIFI_SSID       "si"
+#define WIFI_PASS       "mailo6192"
+
+#define AIO_USERNAME    "nicolasvgreve"
+#define AIO_KEY         "keydeladafruit"
+
+// LED
+#define LED_PIN 13  // LED integrado del UNO R4
+
+// conexión con adafruit io jiji
+AdafruitIO_WiFi io(AIO_USERNAME, AIO_KEY, WIFI_SSID, WIFI_PASS);
+
+// se menciona el feed junto con el key de éste
+AdafruitIO_Feed *ledFeed = io.feed("led-control");
+
+// lo que hace al recibir los datos
+void handleMessage(AdafruitIO_Data *data) {
+  Serial.print("Valor recibido: ");
+  Serial.println(data->toInt());
+
+  if(data->toInt() == 1) {
+    digitalWrite(LED_PIN, HIGH); // encender
+  } else {
+    digitalWrite(LED_PIN, LOW);  // apagar
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(LED_PIN, OUTPUT);
+
+  // led parte encendido
+  digitalWrite(LED_PIN, HIGH);
+
+  io.connect();
+
+  // llega mensaje de encendido (1)
+  ledFeed->onMessage(handleMessage);
+
+  while(io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  Serial.println("Conectado a Adafruit IO");
+
+  ledFeed->get();
+}
+
+void loop() {
+  io.run();
+}
 ```
 
 ## Investigaciones Individuales
