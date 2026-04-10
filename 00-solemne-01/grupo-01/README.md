@@ -308,10 +308,10 @@ Lo segundo que hicimos, fue averiguar sobre Adafruit, ya que esta web iba ser la
 
 ## investigaciones individuales
 
-rellenar en el mismo orden que los integrantes del grupo
-
 [persona-01.md](./persona-01.md)
+
 [persona-02.md](./persona-02.md)
+
 [vxlentiinaa.md](./persona-03.md)
 
 ## bibliografía
