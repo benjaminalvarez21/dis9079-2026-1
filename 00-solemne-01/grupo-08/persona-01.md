@@ -139,6 +139,12 @@ Se recomienda configurar tu Raspberry Pi usando esa documentación y luego exper
 
 **Hardware**
 
+- Lo primero es elegir un auto para poder desarrollar nuestro donkeycar, hay distintos modelos que nos recomiendan en la página. Está la opción de comprar uno que ya esté montado o montar uno nosotros mismos
+
+- Un Donkeycar se puede construir a partir de casi cualquier auto a control remoto, sin embargo, si quieres seguir un camino más fácil, compra cualquiera de los autos WL Toys que se indican en la página, en este caso mostraré la documentación DIY del auto
+
+- nos muestran que se pueden pedir las piezas impresas en 3d PLA y nosotros mismos las afinamos
+
 
 
 **Software**
