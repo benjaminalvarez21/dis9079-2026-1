@@ -125,7 +125,7 @@ este fue parte del trabajo en clases en grupo
 
 ### Investigación Adafruit IO
 
-Conceptos básicos de Adafruit IO: Fuentes de datos:
+Conceptos básicos de Adafruit IO: Fuentes de datos
 
 1. Adafruit IO: Feeds
 
@@ -174,10 +174,10 @@ Los paneles de control son la interfaz visual de Adafruit IO que permite visuali
 
 Pasos a seguir:
 
-1.  **Acceso:** Inicie sesión en [io.adafruit.com](https://io.adafruit.com) y seleccione el enlace "Dashboards" en el encabezado principal.
-2.  **Inicialización:** En la lista de paneles, haga clic en el botón "New Dashboard".
-3.  **Configuración:** Introduzca un nombre y una descripción para el panel. Finalice el proceso haciendo clic en el botón "Create".
-4.  **Visualización:** Seleccione el nombre del panel recién creado para acceder a la interfaz de edición.
+1.  **Acceso:** Inicia sesión en [io.adafruit.com](https://io.adafruit.com) y selecciona el enlace "Dashboards" en el encabezado principal.
+2.  **Inicialización:** En la lista de paneles, hacer clic en el botón "New Dashboard".
+3.  **Configuración:** Introducir un nombre y una descripción para el panel. Finaliza el proceso haciendo clic en el botón "Create".
+4.  **Visualización:** Seleccionar el nombre del panel recién creado para acceder a la interfaz de edición.
 
 *Al crear un panel por primera vez, este se presentará en blanco. Los bloques de visualización y control deben añadirse manualmente vinculándolos a los feeds correspondientes creados previamente.*
 
