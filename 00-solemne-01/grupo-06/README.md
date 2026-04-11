@@ -112,11 +112,22 @@ Cuando logramos volver a conectarnos a Adafruit IO luego de reiniciar la placa, 
 
 Como no entendíamos cual era el problema, decidimos preguntar a la IA (ChatGPT) cuál podía ser el posible error, el cual nos dijo que no debíamos conectar el LED directamente a los 5V ya que esto no nos iba a permitir apagar el LED porque le estabamos dando poder de manera constante, por lo que le hicimos caso y cambiamos el cable Dupont al Pin 8 de la placa, y se veía así:
 
+![Luz interna arduino](./imagenes/luzarduino-final.gif)
+
+Se hizo cambio de cable, de 5V a Pin 8, y funcionó, al estar en 5V haciá que el led se mantuviera encendido siempre
+
 ![LED con cables bien puestos](./imagenes/led-bien-conectado.jpeg)
 
 Cuando probamos otro código, la placa se conectó a Adafruit IO y empezó a recibir la información de encendido y apagado los cuales se representaban como "1" el cual era encendido, y con "0" el cual era apagado.
 
 ![Arduino recibiendo información 0-1 de Adafruit IO](./imagenes/arduino-recibiendo-info.jpeg)
+
+
+![Conexión lograda luz led en protoboard](./imagenes/luzprotoboard-final.gif)
+
+![Reacción](./imagenes/react.gif)
+
+ LOGRADO!!!
 
 ---
 
