@@ -11,7 +11,15 @@ Lunes 13 Abril 2026
 * [Vania Paredes](https://github.com/paredesvania): Código, Circuito, Redacción de texto, Registro
 
 
-## Descripción del proyecto
+## Descripción del proyecto "Don Volumen"
+
+Sistema de transmisión de audio inalámbrico en tiempo real, donde un potenciómetro conectado a una placa Arduino UNO R4 WIFI, controla el volumen de un altavoz ubicado en otra placa Arduino UNO R4 WIFI, comunicados a través de internet mediante el protocolo MQTT de Adafruit IO.
+
+El proyecto consiste en dos Arduino UNO R4 WIFI conectados a internet. El Arduino emisor lee una señal analógica desde un potenciómetro y la convierte en un valor de volumen entre 0 y 100, que publica en un feed de la plataforma Adafruit IO usando el protocolo MQTT. El Arduino receptor se suscribe a ese mismo feed y, al recibir cada valor, ejecuta dos acciones simultáneas: reproduce un tono en un altavoz de 8Ω controlando la amplitud real de la señal mediante PWM y un transistor NPN 2N2222, y actualiza una barra de nivel visual en la matriz LED integrada del Arduino R4 WiFi, encendiendo filas de abajo hacia arriba proporcionales al volumen recibido.
+
+## Video en Funcionamiento
+
+[![Video prueba](https://img.youtube.com/vi/Q4U23jE60xg/maxresdefault.jpg)](https://youtube.com/shorts/Q4U23jE60xg?si=ce4Ev4bNzpgEaBKN)
 
 ## Bill of materials
 
@@ -33,7 +41,91 @@ Para su funcionamiento fue necesaria la creación de 2 códigos distintos: uno e
 ### código para enviar: potenciometro y datos
 
 ```cpp
-// rellenar
+// ============================================================
+// EMISOR - Lee potenciómetro y envía valor de volumen a Adafruit IO
+// Arduino R4 WiFi
+// ============================================================
+
+#include "config.h"   // Credenciales WiFi y Adafruit IO
+
+// --- CONFIGURACIÓN DEL POTENCIÓMETRO ---
+// Conexión:
+//   Pin izquierdo  → GND
+//   Pin central    → A0  (señal analógica)
+//   Pin derecho    → 5V
+const int PIN_POTENCIOMETRO = A0;
+
+// --- FEED DE ADAFRUIT IO ---
+// Mismo nombre exacto que usa el receptor
+AdafruitIO_Feed *feedVolumen = io.feed("paredesvania-volumen");
+
+// --- VARIABLE GLOBAL ---
+// Guarda el último valor enviado para no repetir envíos innecesarios
+int ultimoVolumen = -1;
+
+// ============================================================
+void setup() {
+
+  // Iniciar comunicación serial a 115200 baud
+  Serial.begin(115200);
+
+  // Esperar a que el Monitor Serial esté listo
+  while (!Serial);
+
+  Serial.print("Conectando a Adafruit IO...");
+
+  // Conectar usando las credenciales del config.h
+  io.connect();
+
+  // Esperar hasta que la conexión sea exitosa
+  while (io.status() < AIO_CONNECTED) {
+    Serial.print(".");
+    delay(500);
+  }
+
+  // Confirmar conexión
+  Serial.println();
+  Serial.println(io.statusText());
+  Serial.println("Listo para enviar volumen!");
+}
+
+// ============================================================
+void loop() {
+
+  // Mantener conexión activa con Adafruit IO
+  io.run();
+
+  // --- LEER EL POTENCIÓMETRO ---
+  // analogRead devuelve 0–1023 según la posición del potenciómetro
+  int lecturaRaw = analogRead(PIN_POTENCIOMETRO);
+
+  // Convertir 0–1023 a 0–100 (porcentaje de volumen)
+  int volumen = map(lecturaRaw, 0, 1023, 0, 100);
+
+  // Mostrar en Monitor Serial para verificar
+  Serial.print("Lectura cruda: ");
+  Serial.print(lecturaRaw);
+  Serial.print(" -> Volumen: ");
+  Serial.print(volumen);
+  Serial.println("%");
+
+  // --- ENVIAR SOLO SI EL VALOR CAMBIÓ ---
+  // Evita saturar el feed de Adafruit IO con valores repetidos
+  if (volumen != ultimoVolumen) {
+
+    Serial.print("Enviando: ");
+    Serial.println(volumen);
+
+    // Publicar el valor en el feed
+    feedVolumen->save(volumen);
+
+    // Actualizar el último valor enviado
+    ultimoVolumen = volumen;
+  }
+
+  // Pausa de 200ms entre lecturas
+  delay(200);
+}
 ```
 
 ### Código para recibir: parlantes y panel de leds
@@ -251,6 +343,56 @@ flowchart TB
 
     n8@{ shape: rect}
 ```
+
+### Monitor Serial de Arduino
+..................................................................................................
+Adafruit IO connected.
+
+Listo para enviar volumen!
+
+Lectura: 0 -> Volumen: 0%
+
+Enviando: 36
+
+Lectura: 446 -> Volumen: 43%
+
+Enviando: 43
+
+Lectura: 478 -> Volumen: 46%
+
+Enviando: 46
+
+Lectura: 512 -> Volumen: 50%
+
+Enviando: 50
+
+Lectura: 565 -> Volumen: 55%
+
+Enviando: 55
+
+Lectura: 569 -> Volumen: 55%
+
+Lectura: 624 -> Volumen: 60%
+
+Enviando: 60
+
+Lectura: 688 -> Volumen: 67%
+
+Enviando: 67
+
+Lectura: 746 -> Volumen: 72%
+
+Enviando: 72
+
+Lectura: 808 -> Volumen: 78%
+
+Enviando: 78
+
+Lectura: 865 -> Volumen: 84%
+
+Enviando: 84
+
+Lectura: 938 -> Volumen: 91%
 
 ## Investigaciones individuales
 
