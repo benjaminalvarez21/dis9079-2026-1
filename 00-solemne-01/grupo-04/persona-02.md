@@ -9,7 +9,7 @@ investigaciones individuales
 
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
 
-Refik Anadol
+## Refik Anadol
 
 Inicié una investigación sobre Refik Anadol, un artista contemporáneo que trabaja en la intersección entre arte, ciencia y tecnología. Su enfoque se basa en el uso de inteligencia artificial, datos masivos (big data) y sistemas computacionales para crear instalaciones inmersivas. Desde el primer momento me llamó la atención cómo sus obras rompen con la idea tradicional de la pintura o la imagen fija, proponiendo en cambio visuales en constante transformación.
 Además, investigué su contexto y comprendí que su trabajo surge en una época donde la tecnología digital forma parte de la vida cotidiana. Esto influye directamente en su forma de crear, ya que utiliza herramientas contemporáneas para representar ideas actuales. Me parece importante entender que su obra no solo es estética, sino también un reflejo de la cultura digital en la que vivimos.
@@ -41,13 +41,13 @@ Finalmente, creo que sus obras muestran una nueva forma de entender el arte, don
 
 acá se puede ver algunas de sus obras
 
-Sueños de WDCH
+## Sueños de WDCH
 
 <img width="1107" height="620" alt="Captura de pantalla 2026-04-13 150155" src="https://github.com/user-attachments/assets/77f4a847-b8ef-48bc-bf1a-e4e24910de76" />
 
 La obra *WDCH Dreams (Sueños de WDCH)* de Refik Anadol es una instalación audiovisual que utiliza inteligencia artificial y datos del archivo de la Los Angeles Philharmonic para transformar sonidos, memorias y registros en imágenes en movimiento llenas de color. A través de proyecciones sobre la fachada del Walt Disney Concert Hall, la obra genera flujos visuales abstractos que cambian constantemente, creando la sensación de un “sueño digital”. Los colores, las formas y el movimiento no son fijos, sino que se producen en tiempo real mediante sistemas computacionales, mostrando cómo la tecnología puede convertir datos en experiencias artísticas inmersivas.
 
-Recuerdos que se derriten
+## Recuerdos que se derriten
 
 <img width="1041" height="705" alt="Captura de pantalla 2026-04-13 151008" src="https://github.com/user-attachments/assets/3dcdd305-e717-484a-8988-b909e7c5ef71" />
 
@@ -55,6 +55,6 @@ Melting Memories es una serie de obras de arte digital que exploran la materiali
 que surgen de la intersección entre la tecnología avanzada y el arte contemporáneo. Compuesto por pinturas de datos, esculturas de datos aumentadas y proyecciones de luz, el proyecto en su conjunto presenta avances tecnológicos que permiten a los visitantes experimentar interpretaciones estéticas de datos de EEG recopilados sobre los mecanismos neuronales del control cognitivo.
 
 
-https://aiartists.org/refik-anadol
-https://refikanadol.com/refik-anadol/
+* https://aiartists.org/refik-anadol
+* https://refikanadol.com/refik-anadol/
 
