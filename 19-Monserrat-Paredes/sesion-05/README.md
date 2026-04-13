@@ -317,6 +317,7 @@ io.feed();
 
 ## Código que si funciona + el config.hes donde se guarda la clave de Adafruit IO y la clave de wifi
 
+```cpp
 // Adafruit IO Publish Example
 //
 // Adafruit invests time and resources providing this open source code.
@@ -408,7 +409,7 @@ void loop()
   // usamos delay para pausar el codigo 3 segundos
   delay(3000);
 }
-
+```
 
 ## Investigación: Arte y tecnología inalámbrica
 
