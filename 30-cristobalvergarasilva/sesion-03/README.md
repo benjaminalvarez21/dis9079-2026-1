@@ -3,11 +3,11 @@
 lunes 23 marzo 2026
 
 ### Raspberry Pi
->Empresa de computadores fundada en el 2009, hacía computadores baratos para la época, antecesores de los Personal Computer (pc), los mainframe computers, que son computadores gigantes que la gente tenía acceso a conectarse a ellos.
+Empresa de computadores fundada en el 2009, hacía computadores baratos para la época, antecesores de los Personal Computer (pc), los mainframe computers, que son computadores gigantes que la gente tenía acceso a conectarse a ellos.
 
->Raspberry Pi se diferencian a los Arduinos porque estos son microcontroladores, que sirven para cosas menos complejas y Rasberry Pi hace computadores y se conectan a WIFI, HDMI, USB-C, aunque en la actualidad ambas empresas hacen ambas cosas.
+Raspberry Pi se diferencian a los Arduinos porque estos son microcontroladores, que sirven para cosas menos complejas y Rasberry Pi hace computadores y se conectan a WIFI, HDMI, USB-C, aunque en la actualidad ambas empresas hacen ambas cosas.
 
->Estos microcomputadores sirven como bases sólidas y en el curso vamos a ocupar el Raspberry Pi Pico 2 W, versión inalámbrica del microcontrolador Pico 2.
+Estos microcomputadores sirven como bases sólidas y en el curso vamos a ocupar el Raspberry Pi Pico 2 W, versión inalámbrica del microcontrolador Pico 2.
 
 ![runway](./imagenes/MCI10561.webp)
 

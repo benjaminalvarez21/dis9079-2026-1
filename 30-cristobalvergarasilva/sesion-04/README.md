@@ -31,7 +31,10 @@ SUDO es un comando peligroso (súper user do).
 >V significa dime todo lo que sabes Mosquitto.
 
 ### Claude Shannon
->Matemático que inventó la base de nuestra tecnología actual. Planteo la Teoría de la Información, donde describe como los elementos se pueden comunicar. Es uno de los padres de las conexiones inalámbricas.
+
+![runway](./imagenes/csm_Shannon2_MIT_Museum_c62b554af2.jpg)
+
+Matemático que inventó la base de nuestra tecnología actual. Planteo la Teoría de la Información, donde describe como los elementos se pueden comunicar. Es uno de los padres de las conexiones inalámbricas.
 
 >Fuente información - mensaje - transmisor - señal, baja mediante el aire, comunicaciones siempre son imperfectas.
 
