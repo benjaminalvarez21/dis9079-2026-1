@@ -9,6 +9,7 @@ investigaciones individuales
 Adafruit IO es un servicio en la nube de Adafruit para desarrollar proyectos de Internet de las Cosas (IoT). Permite a los usuarios conectar, monitorizar y controlar dispositivos y sensores IoT en línea sin escribir una sola línea de código.
 
 También ofrece recursos y tutoriales para ayudar a los usuarios a iniciar sus proyectos de IoT.
+
 Proyectos de IoT: son sistemas que conectan hardware (sensores/actuadores) a internet para monitorear y controlar dispositivos remotamente.
 
 Incluye bibliotecas para lenguajes como CircuitPython, Arduino, Python y otros, lo que facilita la integración de dispositivos.
@@ -69,7 +70,7 @@ El ejemplo “Publicar” hace:
 Software utilizado:
 
 - Arduino IDE
-- Bibliotecas de Adafruit IO Arduino
+- Librerías de Adafruit IO Arduino
 
 ## Proceso de instalación
 
@@ -78,22 +79,16 @@ Software utilizado:
 - Buscar: Adafruit IO Arduino.
 - Instalar versión 4.3.4 (abril 2026) o superior.
 
-- Abrir Arduino IDE.
-- Dirigirse al menú lateral izquierdo, icono de Library Manager (ícono lateral izquierdo).
-- Buscar: Adafruit IO Arduino.
-- Instalar versión 4.3.4 (abril 2026) o superior.
-
-
 <img width="445" height="386" alt="Libreria arduino" src="https://github.com/user-attachments/assets/d41cf0e5-0742-459a-81c9-512495ffe6f0" />
 
 
 ## Aprendizajes
 
-- Las librerías no funcionan solas: necesitan dependencias.
+- Las bibliotecas no funcionan solas: necesitan dependencias.
 
 - Arduino automatiza la instalación, pero hay que aceptar manualmente.
 
-- La versión de librería puede afectar compatibilidad.
+- La versión de la biblioteca puede afectar compatibilidad.
 
 ## Creación de cuenta en Adafruit IO
 
@@ -105,13 +100,16 @@ Software utilizado:
 
 - Acceder a credenciales.
 
+
 Así se ve cuando creas la cuenta y configuraciones:
 
 
 <img width="1244" height="785" alt="inicio sesion" src="https://github.com/user-attachments/assets/22641bc6-16a8-4bef-be95-4d321ec27b9f" />
 
 
+
 Después de crear la cuenta se ve así el inicio de sesión:
+
 
 
 <img width="1374" height="736" alt="inicio io" src="https://github.com/user-attachments/assets/176ee3ef-e288-40c9-aaba-d337fe1b199c" />
@@ -139,11 +137,13 @@ Compartir solo por medios privados.
 
 Este archivo NO debe subirse completo a GitHub.
 
+
 ## Configuración del código
 
 El sistema funciona con dos archivos:
 
 - 5.1 Archivo principal .ino
+
 
 ## Contiene
 
@@ -155,11 +155,13 @@ El sistema funciona con dos archivos:
 
 - 5.2 Archivo config.h
 
+
 ## Desarrollo Proyecto solemne 01: En clases
 
 Objetivo: Que los objetos "hablen" entre sí sin cables.
 
 La idea es crear un puente invisible entre un aparato físico (Arduino r4 wifi) y un sitio en internet (Adafruit IO). Esto permite que el aparato mande información a la nube o que, desde un computador, le digas al aparato qué hacer, sin importar qué tan lejos estés.
+
 
 ## ¿Cómo funciona?
 
@@ -183,7 +185,7 @@ define IO_USERNAME "vxlentiinaa"
 
 define IO_KEY "xxxx"
 
-- Sin esto, Arduino no puede conectarse
+Sin esto, Arduino no puede conectarse
 
 
 ## Función importante
@@ -201,11 +203,13 @@ AdafruitIO_Feed *nombreFeed = io.feed("grupo01");
 
 Define el canal de comunicación
 
+
 ## Envío de datos
 
 nombreFeed->save(contador);
 
 Envía datos a la nube
+
 
 ## Problemas durante el proceso
 
@@ -216,6 +220,7 @@ Envía datos a la nube
 
 <img width="621" height="530" alt="signos de interrogación arduino" src="https://github.com/user-attachments/assets/f9aefffe-a976-495b-8ea8-77d04a10206f" />
 
+
 ## Solución
 
 - Código: Serial.begin(115200)
@@ -224,7 +229,9 @@ Envía datos a la nube
 
 - Se corrigió a 115200
 
+
 <img width="1112" height="589" alt="Baudio auduino" src="https://github.com/user-attachments/assets/65ba7c18-ab59-43ae-88b0-3bdae3e7ecaf" />
+
 
 ## 2. El "Botón de Reset" accidental
 
@@ -237,9 +244,11 @@ El cableado o el contacto en la protoboard activó el sistema de Reset. Esto cor
 
 ![boton reset](https://github.com/user-attachments/assets/9651f897-9fdf-4552-9906-e6e76dd1af50)
 
+
  Datos visualizados en Adafruit IO
 
 <img width="1470" height="956" alt="prueba 1 grupo01" src="https://github.com/user-attachments/assets/06febfc2-47be-4c84-9614-2be0a94c92ba" />
+
 
 ## Código final funcional (Ya validado en clases)
 
@@ -264,10 +273,11 @@ Adafruit IO para ver gráficos en tiempo real con los datos enviados.
 
 <img width="1470" height="956" alt="prueba 2 grupo01" src="https://github.com/user-attachments/assets/7f8acb54-61d5-4375-9776-09911aa10fb1" />
 
+
 <img width="1470" height="956" alt="prueba 3 grupo01" src="https://github.com/user-attachments/assets/bfdf2bf6-948d-4b50-9b00-93c9e9332339" />
 
-## Reflexión del proceso
 
+## Reflexión del proceso
 
 Aprendizajes técnicos:
 
@@ -279,7 +289,7 @@ Aprendizajes técnicos:
 
 - Comunicación entre dispositivos remotos
 
-*Aprendizajes prácticos:
+Aprendizajes prácticos:
 
 - Los errores más comunes son simples (baudios, claves).
 
@@ -290,6 +300,7 @@ Aprendizajes técnicos:
 - En Adafruit IO, te da la llave para colocar en el código en arduino.
 
 - El delay(3000) evita sobrecargar la plataforma (limitación de escritura).
+
 
 Siempre hay que colocar esa línea, para que el arduino no olvide el adafruit IO
 
@@ -419,14 +430,15 @@ Es una especie híbrida, conformada por diversos organismos que coexisten en sim
 
 Sus obras son robots biotecnológicos que viven en entornos de ríos contaminados.
 
--La Tecnología: Utiliza celdas de combustible microbianas que generan electricidad a partir de la descomposición de materia orgánica en el agua.
+- La Tecnología: Utiliza celdas de combustible microbianas que generan electricidad a partir de la descomposición de materia orgánica en el agua.
 
--Inalámbrico/IoT: El robot se desplaza de forma autónoma buscando agua contaminada para "alimentarse". Transmite datos sobre la calidad del agua y su propia ubicación, creando un mapa vivo de la degradación ambiental. Es, literalmente, un "sensor vivo" que habita la ciudad.
+- Inalámbrico/IoT: El robot se desplaza de forma autónoma buscando agua contaminada para "alimentarse". Transmite datos sobre la calidad del agua y su propia ubicación, creando un mapa vivo de la degradación ambiental. Es, literalmente, un "sensor vivo" que habita la ciudad.
 
 
 Fotos del proyecto:
 
 ![plantas nomadas1](https://github.com/user-attachments/assets/4a845657-1d32-436e-b5f1-31cf06fae21d)
+
 
 ![plantas nomadas2](https://github.com/user-attachments/assets/12098d65-fc21-40b3-816b-1f9296989a3f)
 
