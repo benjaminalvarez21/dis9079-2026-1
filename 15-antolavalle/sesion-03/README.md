@@ -31,7 +31,7 @@ Arduino:
 + Capaz de ejecutar procesos más avanzados
 + Programación en Python o MicroPython
 
-+ En este contexto, Arduino se utiliza para control directo de hardware, mientras que Raspberry Pi permite manejar procesos más complejos o múltiples tareas.
++ En este contexto, Arduino se utiliza para control directo de hardware, mientras que Raspberry Pi permite manejar procesos más complejos o múltiples tareas
 
 ## Visual Studio Code
 
