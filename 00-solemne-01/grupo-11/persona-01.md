@@ -1,6 +1,6 @@
 # persona-01
 
-investigaciones individuales
+Investigaciones individuales
 
 ## sobre adafruit i/o
 
