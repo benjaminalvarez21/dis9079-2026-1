@@ -43,6 +43,3 @@ También comenzamos a explorar nuevas posibilidades con lo aprendido. Aunque al 
 Tuvimos varios problemas técnicos durante el proceso, pero tras distintos intentos y ajustes, logramos encender correctamente el LED de la placa.
 
 En general, fue una experiencia positiva, ya que conseguimos resultados concretos y surgieron nuevas ideas para seguir desarrollando el proyecto.
-
-
-
