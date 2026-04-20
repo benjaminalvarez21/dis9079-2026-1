@@ -6,6 +6,10 @@ Grupo solemne 2:
 
 Grupo 8: Sofía Cartes - Monserrat Paredes - Valentina Ruz
 
+## Apuntes
+
+Apuntes máquinas: Libro de todos los conocimientos que pasan el ramo de taller de Máquinas Eléctricas
+
 Materiales que usaremos en clases:
 
 - potencíometro, tres patitas, los extremos no se conectan (detecta el giro y revisar el valor)
@@ -23,9 +27,6 @@ Materiales que usaremos en clases:
 2. Terminal negativo: Referencia tierra del motor (0 voltios)
 
 3. Entrada de señal: Recibe la señal de control del motor
-
-## APUNTES
-Apuntes maquinas: Libro de todos los conocimientos que pasan el ramo de taller de Maquinas electronicas
 
 
 ## Placa de pruebas (protoboard): circulan electrones
@@ -161,3 +162,37 @@ void loop()
 
 
 ## ¿Cómo pasar este dato a la nube?
+
+Al momento de tener el codigo en el arduino debemos cambiar la linea 13
+
+```cpp
+#define AIO_FEED     AIO_USERNAME “/blabalbla
+```
+
+No cambiar el usuario ni la clave del profe ya que funciona como receptor
+
+cambiar de 500 a 5000 (línea 15)
+
+```cpp
+#define INTERVALO_PUBLISH 500
+```
+
+Mas
+
+## Cambiar potencíometro por el sensor LDR (luz)
+
+Potenciómetro: tiene tres pines: corriente, señal y tierra).
+LDR: resistencia que varía.
+
+
+## Cómo conectar la LDR
+Para sustituir el potenciómetro, conecta los componentes de la siguiente manera:
+
+- 5V de Arduino va a un pin de la LDR.
+
+- El otro pin de la LDR va al pin analógico (por ejemplo, A0).
+
+- Desde ese mismo pin A0, conectas una resistencia de 10kΩ que vaya a GND (tierra).
+
+Una patita a 5V y la otra desde ground a una resistencia de 10K, y desde la otra patita de la resistencia la conexión al pin A y a la otra patita del LDR
+
