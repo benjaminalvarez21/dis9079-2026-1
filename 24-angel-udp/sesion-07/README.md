@@ -6,28 +6,27 @@ lunes 20 abril 2026
 
 entrega de materiales como grupo 1
 
-Potenciometro tiene 3 patitas, por lo general se conecta la 2 y otra de algún extremo
+Potenciómetro tiene 3 patitas, por lo general se conecta la 2 y otra de algún extremo.
 
-LDR (resistencia), protoboard y cables
+LDR (resistencia), protoboard y cables.
 
-Motor servo
+Motor servo.
 
- Protoboard o breadboard: está separado en mini placas de metal donde circulan los electrones
+Protoboard o breadboard: está separado en mini placas de metal donde circulan los electrones.
 
- el arduino y la Raspberry pi se colocan en el lugar del ar duino en voltaje positivo y el otro jumper en tierra
+El Arduino y la Raspberry Pi se colocan en el lugar del Arduino, en voltaje positivo, y el otro jumper en tierra.
 
- dividir por colores
+Dividir por colores para no perderse en las conexiones.
 
- lo que conecte en lada metal va a seguir con la continuidsd
+Lo que conecte en cada espacio de la protoboard va a seguir con la continuidad.
 
- App gratuita Tinkercad
+App gratuita Tinkercad.
 
- Distintas secciones
+Distintas secciones.
 
- potenciometro nos aseguramos que esté en 3 lugares distintos
+Potenciómetro, nos aseguramos que esté en 3 lugares distintos.
 
- Le agregamos codigo al arduino
-
+Le agregamos código al Arduino.
 ```
 // ejemplo lectura potenciometro
 
@@ -53,7 +52,7 @@ void loop()
 
 ![ejemplo de codigo](./imagenes/ejemplo.png)
 
-Y luego utilizamos un nuevo código para colocar el motor Servo
+Y luego utilizamos un nuevo código para colocar el motor servo.
 
 ```
 // ejemplo lectura potenciometro
@@ -108,6 +107,10 @@ void loop()
 }
 ```
 
-Luego con el potenciometro que está en la protoboard hicimos que se moviera el motor
+Después con el potenciómetro que está en la protoboard hicimos que se moviera el motor.
 
 ![imagén con motor servo](./imagenes/motorservo.jpeg)
+
+Para finalizar subimos el código a la nube con nuestro grupo.
+
+![ejemplo subido a la nube](./imagenes/gruponube.png)
