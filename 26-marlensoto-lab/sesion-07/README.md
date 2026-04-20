@@ -11,6 +11,7 @@ El kit utilizado incluye los siguientes componentes:
 - **Protoboard (Placa de pruebas)**: Permite realizar conexiones sin necesidad de soldar.
 - **Servo / Motor**: Dispositivo que necesita alimentación (voltaje) y conexión a tierra para funcionar.
 
+![kit](imagenes/kit_deconecciones.jpeg)
 ---
 
 ## Conceptos clave
