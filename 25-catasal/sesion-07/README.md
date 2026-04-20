@@ -19,7 +19,10 @@ la patita 8 es positivo y la patita izquierda negativo
 mientas tanto la patita de almedio es el que regula 
 analogo A0 a C9 
 
+<img width="1295" height="645" alt="tinkercad" src="https://github.com/user-attachments/assets/96510f88-a6df-49dd-80bb-b7e64b6c5200" />
 
+
+## resultados
 
 https://github.com/user-attachments/assets/62a4e77d-af52-41db-9803-5122433b0dae
 
