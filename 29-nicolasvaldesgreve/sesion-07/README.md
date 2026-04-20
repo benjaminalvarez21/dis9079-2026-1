@@ -68,4 +68,10 @@ Con éste código, pudimos lograr que el motor se moviera mediante el movimiento
 
 ---
 
+### Link grupal!!
+
+Aprovechando que se formaron los nuevos grupos, creamos nuevos Feeds por cada uno de los grupos para poder enviar la información de nuestros potenciómetros!! Éstos fueron enviados al Adafruit IO de Aarón para poder hacerlos públicos. Nuestro link grupal es el siguiente: <https://io.adafruit.com/udpmontoyamoraga/feeds/potenciometro-05>
+
+---
+
  Buscar cómo reemplazar el potenciómetro en el circuito por el LDR
